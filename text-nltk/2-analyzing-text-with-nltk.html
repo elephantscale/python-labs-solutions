@@ -13122,6 +13122,357 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="err">!</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">nltk</span><span class="o">.</span><span class="n">downloader</span> <span class="nb">all</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/home/ubuntu/apps/anaconda/lib/python3.7/runpy.py:125: RuntimeWarning: &#39;nltk.downloader&#39; found in sys.modules after import of package &#39;nltk&#39;, but prior to execution of &#39;nltk.downloader&#39;; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))
+[nltk_data] Downloading collection &#39;all&#39;
+[nltk_data]    | 
+[nltk_data]    | Downloading package abc to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package abc is already up-to-date!
+[nltk_data]    | Downloading package alpino to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package alpino is already up-to-date!
+[nltk_data]    | Downloading package biocreative_ppi to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package biocreative_ppi is already up-to-date!
+[nltk_data]    | Downloading package brown to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package brown is already up-to-date!
+[nltk_data]    | Downloading package brown_tei to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package brown_tei is already up-to-date!
+[nltk_data]    | Downloading package cess_cat to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package cess_cat is already up-to-date!
+[nltk_data]    | Downloading package cess_esp to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package cess_esp is already up-to-date!
+[nltk_data]    | Downloading package chat80 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package chat80 is already up-to-date!
+[nltk_data]    | Downloading package city_database to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package city_database is already up-to-date!
+[nltk_data]    | Downloading package cmudict to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package cmudict is already up-to-date!
+[nltk_data]    | Downloading package comparative_sentences to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package comparative_sentences is already up-to-
+[nltk_data]    |       date!
+[nltk_data]    | Downloading package comtrans to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package comtrans is already up-to-date!
+[nltk_data]    | Downloading package conll2000 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package conll2000 is already up-to-date!
+[nltk_data]    | Downloading package conll2002 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package conll2002 is already up-to-date!
+[nltk_data]    | Downloading package conll2007 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package conll2007 is already up-to-date!
+[nltk_data]    | Downloading package crubadan to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package crubadan is already up-to-date!
+[nltk_data]    | Downloading package dependency_treebank to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package dependency_treebank is already up-to-date!
+[nltk_data]    | Downloading package dolch to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package dolch is already up-to-date!
+[nltk_data]    | Downloading package europarl_raw to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package europarl_raw is already up-to-date!
+[nltk_data]    | Downloading package floresta to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package floresta is already up-to-date!
+[nltk_data]    | Downloading package framenet_v15 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package framenet_v15 is already up-to-date!
+[nltk_data]    | Downloading package framenet_v17 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package framenet_v17 is already up-to-date!
+[nltk_data]    | Downloading package gazetteers to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package gazetteers is already up-to-date!
+[nltk_data]    | Downloading package genesis to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package genesis is already up-to-date!
+[nltk_data]    | Downloading package gutenberg to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package gutenberg is already up-to-date!
+[nltk_data]    | Downloading package ieer to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package ieer is already up-to-date!
+[nltk_data]    | Downloading package inaugural to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package inaugural is already up-to-date!
+[nltk_data]    | Downloading package indian to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package indian is already up-to-date!
+[nltk_data]    | Downloading package jeita to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package jeita is already up-to-date!
+[nltk_data]    | Downloading package kimmo to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package kimmo is already up-to-date!
+[nltk_data]    | Downloading package knbc to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package knbc is already up-to-date!
+[nltk_data]    | Downloading package lin_thesaurus to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package lin_thesaurus is already up-to-date!
+[nltk_data]    | Downloading package mac_morpho to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package mac_morpho is already up-to-date!
+[nltk_data]    | Downloading package machado to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package machado is already up-to-date!
+[nltk_data]    | Downloading package masc_tagged to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package masc_tagged is already up-to-date!
+[nltk_data]    | Downloading package moses_sample to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package moses_sample is already up-to-date!
+[nltk_data]    | Downloading package movie_reviews to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package movie_reviews is already up-to-date!
+[nltk_data]    | Downloading package names to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package names is already up-to-date!
+[nltk_data]    | Downloading package nombank.1.0 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package nombank.1.0 is already up-to-date!
+[nltk_data]    | Downloading package nps_chat to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package nps_chat is already up-to-date!
+[nltk_data]    | Downloading package omw to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package omw is already up-to-date!
+[nltk_data]    | Downloading package opinion_lexicon to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package opinion_lexicon is already up-to-date!
+[nltk_data]    | Downloading package paradigms to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package paradigms is already up-to-date!
+[nltk_data]    | Downloading package pil to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package pil is already up-to-date!
+[nltk_data]    | Downloading package pl196x to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package pl196x is already up-to-date!
+[nltk_data]    | Downloading package ppattach to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package ppattach is already up-to-date!
+[nltk_data]    | Downloading package problem_reports to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package problem_reports is already up-to-date!
+[nltk_data]    | Downloading package propbank to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package propbank is already up-to-date!
+[nltk_data]    | Downloading package ptb to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package ptb is already up-to-date!
+[nltk_data]    | Downloading package product_reviews_1 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package product_reviews_1 is already up-to-date!
+[nltk_data]    | Downloading package product_reviews_2 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package product_reviews_2 is already up-to-date!
+[nltk_data]    | Downloading package pros_cons to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package pros_cons is already up-to-date!
+[nltk_data]    | Downloading package qc to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package qc is already up-to-date!
+[nltk_data]    | Downloading package reuters to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package reuters is already up-to-date!
+[nltk_data]    | Downloading package rte to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package rte is already up-to-date!
+[nltk_data]    | Downloading package semcor to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package semcor is already up-to-date!
+[nltk_data]    | Downloading package senseval to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package senseval is already up-to-date!
+[nltk_data]    | Downloading package sentiwordnet to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package sentiwordnet is already up-to-date!
+[nltk_data]    | Downloading package sentence_polarity to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package sentence_polarity is already up-to-date!
+[nltk_data]    | Downloading package shakespeare to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package shakespeare is already up-to-date!
+[nltk_data]    | Downloading package sinica_treebank to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package sinica_treebank is already up-to-date!
+[nltk_data]    | Downloading package smultron to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package smultron is already up-to-date!
+[nltk_data]    | Downloading package state_union to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package state_union is already up-to-date!
+[nltk_data]    | Downloading package stopwords to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package stopwords is already up-to-date!
+[nltk_data]    | Downloading package subjectivity to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package subjectivity is already up-to-date!
+[nltk_data]    | Downloading package swadesh to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package swadesh is already up-to-date!
+[nltk_data]    | Downloading package switchboard to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package switchboard is already up-to-date!
+[nltk_data]    | Downloading package timit to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package timit is already up-to-date!
+[nltk_data]    | Downloading package toolbox to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package toolbox is already up-to-date!
+[nltk_data]    | Downloading package treebank to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package treebank is already up-to-date!
+[nltk_data]    | Downloading package twitter_samples to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package twitter_samples is already up-to-date!
+[nltk_data]    | Downloading package udhr to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package udhr is already up-to-date!
+[nltk_data]    | Downloading package udhr2 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package udhr2 is already up-to-date!
+[nltk_data]    | Downloading package unicode_samples to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package unicode_samples is already up-to-date!
+[nltk_data]    | Downloading package universal_treebanks_v20 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package universal_treebanks_v20 is already up-to-
+[nltk_data]    |       date!
+[nltk_data]    | Downloading package verbnet to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package verbnet is already up-to-date!
+[nltk_data]    | Downloading package verbnet3 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package verbnet3 is already up-to-date!
+[nltk_data]    | Downloading package webtext to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package webtext is already up-to-date!
+[nltk_data]    | Downloading package wordnet to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package wordnet is already up-to-date!
+[nltk_data]    | Downloading package wordnet_ic to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package wordnet_ic is already up-to-date!
+[nltk_data]    | Downloading package words to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package words is already up-to-date!
+[nltk_data]    | Downloading package ycoe to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package ycoe is already up-to-date!
+[nltk_data]    | Downloading package rslp to /home/ubuntu/nltk_data...
+[nltk_data]    |   Package rslp is already up-to-date!
+[nltk_data]    | Downloading package maxent_treebank_pos_tagger to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package maxent_treebank_pos_tagger is already up-
+[nltk_data]    |       to-date!
+[nltk_data]    | Downloading package universal_tagset to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package universal_tagset is already up-to-date!
+[nltk_data]    | Downloading package maxent_ne_chunker to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package maxent_ne_chunker is already up-to-date!
+[nltk_data]    | Downloading package punkt to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package punkt is already up-to-date!
+[nltk_data]    | Downloading package book_grammars to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package book_grammars is already up-to-date!
+[nltk_data]    | Downloading package sample_grammars to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package sample_grammars is already up-to-date!
+[nltk_data]    | Downloading package spanish_grammars to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package spanish_grammars is already up-to-date!
+[nltk_data]    | Downloading package basque_grammars to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package basque_grammars is already up-to-date!
+[nltk_data]    | Downloading package large_grammars to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package large_grammars is already up-to-date!
+[nltk_data]    | Downloading package tagsets to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package tagsets is already up-to-date!
+[nltk_data]    | Downloading package snowball_data to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package snowball_data is already up-to-date!
+[nltk_data]    | Downloading package bllip_wsj_no_aux to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package bllip_wsj_no_aux is already up-to-date!
+[nltk_data]    | Downloading package word2vec_sample to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package word2vec_sample is already up-to-date!
+[nltk_data]    | Downloading package panlex_swadesh to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package panlex_swadesh is already up-to-date!
+[nltk_data]    | Downloading package mte_teip5 to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package mte_teip5 is already up-to-date!
+[nltk_data]    | Downloading package averaged_perceptron_tagger to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package averaged_perceptron_tagger is already up-
+[nltk_data]    |       to-date!
+[nltk_data]    | Downloading package averaged_perceptron_tagger_ru to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package averaged_perceptron_tagger_ru is already
+[nltk_data]    |       up-to-date!
+[nltk_data]    | Downloading package perluniprops to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package perluniprops is already up-to-date!
+[nltk_data]    | Downloading package nonbreaking_prefixes to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package nonbreaking_prefixes is already up-to-date!
+[nltk_data]    | Downloading package vader_lexicon to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package vader_lexicon is already up-to-date!
+[nltk_data]    | Downloading package porter_test to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package porter_test is already up-to-date!
+[nltk_data]    | Downloading package wmt15_eval to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package wmt15_eval is already up-to-date!
+[nltk_data]    | Downloading package mwa_ppdb to
+[nltk_data]    |     /home/ubuntu/nltk_data...
+[nltk_data]    |   Package mwa_ppdb is already up-to-date!
+[nltk_data]    | 
+[nltk_data]  Done downloading collection all
+CPU times: user 25.2 ms, sys: 12.9 ms, total: 38.2 ms
+Wall time: 1.93 s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13132,37 +13483,153 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
-<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">expanduser</span>
-<span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/data/nltk_data&quot;</span><span class="p">)</span>
+<span class="c1"># from os.path import expanduser</span>
+<span class="c1"># nltk.data.path.append( expanduser(&quot;~&quot;) + &quot;/data/nltk_data&quot;)</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">state_union</span>
 <span class="kn">from</span> <span class="nn">nltk</span> <span class="k">import</span> <span class="n">FreqDist</span>
 
 <span class="c1">## -- state of the union</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">state_union</span><span class="o">.</span><span class="n">fileids</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;1945-Truman.txt&#39;, &#39;1946-Truman.txt&#39;, &#39;1947-Truman.txt&#39;, &#39;1948-Truman.txt&#39;, &#39;1949-Truman.txt&#39;, &#39;1950-Truman.txt&#39;, &#39;1951-Truman.txt&#39;, &#39;1953-Eisenhower.txt&#39;, &#39;1954-Eisenhower.txt&#39;, &#39;1955-Eisenhower.txt&#39;, &#39;1956-Eisenhower.txt&#39;, &#39;1957-Eisenhower.txt&#39;, &#39;1958-Eisenhower.txt&#39;, &#39;1959-Eisenhower.txt&#39;, &#39;1960-Eisenhower.txt&#39;, &#39;1961-Kennedy.txt&#39;, &#39;1962-Kennedy.txt&#39;, &#39;1963-Johnson.txt&#39;, &#39;1963-Kennedy.txt&#39;, &#39;1964-Johnson.txt&#39;, &#39;1965-Johnson-1.txt&#39;, &#39;1965-Johnson-2.txt&#39;, &#39;1966-Johnson.txt&#39;, &#39;1967-Johnson.txt&#39;, &#39;1968-Johnson.txt&#39;, &#39;1969-Johnson.txt&#39;, &#39;1970-Nixon.txt&#39;, &#39;1971-Nixon.txt&#39;, &#39;1972-Nixon.txt&#39;, &#39;1973-Nixon.txt&#39;, &#39;1974-Nixon.txt&#39;, &#39;1975-Ford.txt&#39;, &#39;1976-Ford.txt&#39;, &#39;1977-Ford.txt&#39;, &#39;1978-Carter.txt&#39;, &#39;1979-Carter.txt&#39;, &#39;1980-Carter.txt&#39;, &#39;1981-Reagan.txt&#39;, &#39;1982-Reagan.txt&#39;, &#39;1983-Reagan.txt&#39;, &#39;1984-Reagan.txt&#39;, &#39;1985-Reagan.txt&#39;, &#39;1986-Reagan.txt&#39;, &#39;1987-Reagan.txt&#39;, &#39;1988-Reagan.txt&#39;, &#39;1989-Bush.txt&#39;, &#39;1990-Bush.txt&#39;, &#39;1991-Bush-1.txt&#39;, &#39;1991-Bush-2.txt&#39;, &#39;1992-Bush.txt&#39;, &#39;1993-Clinton.txt&#39;, &#39;1994-Clinton.txt&#39;, &#39;1995-Clinton.txt&#39;, &#39;1996-Clinton.txt&#39;, &#39;1997-Clinton.txt&#39;, &#39;1998-Clinton.txt&#39;, &#39;1999-Clinton.txt&#39;, &#39;2000-Clinton.txt&#39;, &#39;2001-GWBush-1.txt&#39;, &#39;2001-GWBush-2.txt&#39;, &#39;2002-GWBush.txt&#39;, &#39;2003-GWBush.txt&#39;, &#39;2004-GWBush.txt&#39;, &#39;2005-GWBush.txt&#39;, &#39;2006-GWBush.txt&#39;]
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pprint</span>
 
 <span class="n">gw2006</span> <span class="o">=</span> <span class="n">state_union</span><span class="o">.</span><span class="n">raw</span><span class="p">(</span><span class="s1">&#39;2006-GWBush.txt&#39;</span><span class="p">)</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;len of gw2006 : &quot;</span> <span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">gw2006</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;gw2006 :</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>  <span class="n">gw2006</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">300</span><span class="p">])</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;---- gw2006-----&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gw2006</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">300</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
 <span class="c1">## TODO-2 :  get the words</span>
-<span class="n">gw2006_words</span> <span class="o">=</span> <span class="n">state_union</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;???&#39;</span><span class="p">)</span>
+<span class="n">gw2006_words</span> <span class="o">=</span> <span class="n">state_union</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2006-GWBush.txt&#39;</span><span class="p">)</span>
 <span class="c1">## TODO-3 : print number of words and some words (Hint : gw2006_words[1:100])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(gw2006_words) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="err">???</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;gw2006_words : </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="err">???</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(gw2006_words) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">gw2006_words</span><span class="p">))</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;--- gw2006_words ----&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">gw2006_words</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">100</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
 <span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">gw2006_words</span><span class="p">)</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;most common words : &quot;</span> <span class="p">,</span> <span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;top words : &quot;</span> <span class="p">)</span>
+<span class="n">top_words</span> <span class="o">=</span> <span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">top_words</span><span class="p">)</span>
 <span class="c1">## What do we see?</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len of gw2006 :  33411
+---- gw2006-----
+RESIDENT GEORGE W. BUSH&#39;S ADDRESS BEFORE A JOINT SESSION OF THE CONGRESS ON THE STATE OF THE UNION
+ 
+January 31, 2006
+
+THE PRESIDENT: Thank you all. Mr. Speaker, Vice President Cheney, members of Congress, members of the Supreme Court and diplomatic corps, distinguished guests, and fellow citizens:
+---
+len(gw2006_words) :  6515
+--- gw2006_words ----
+[&#39;GEORGE&#39;, &#39;W&#39;, &#39;.&#39;, &#39;BUSH&#39;, &#34;&#39;&#34;, &#39;S&#39;, &#39;ADDRESS&#39;, &#39;BEFORE&#39;, &#39;A&#39;, &#39;JOINT&#39;, &#39;SESSION&#39;, &#39;OF&#39;, &#39;THE&#39;, &#39;CONGRESS&#39;, &#39;ON&#39;, &#39;THE&#39;, &#39;STATE&#39;, &#39;OF&#39;, &#39;THE&#39;, &#39;UNION&#39;, &#39;January&#39;, &#39;31&#39;, &#39;,&#39;, &#39;2006&#39;, &#39;THE&#39;, &#39;PRESIDENT&#39;, &#39;:&#39;, &#39;Thank&#39;, &#39;you&#39;, &#39;all&#39;, &#39;.&#39;, &#39;Mr&#39;, &#39;.&#39;, &#39;Speaker&#39;, &#39;,&#39;, &#39;Vice&#39;, &#39;President&#39;, &#39;Cheney&#39;, &#39;,&#39;, &#39;members&#39;, &#39;of&#39;, &#39;Congress&#39;, &#39;,&#39;, &#39;members&#39;, &#39;of&#39;, &#39;the&#39;, &#39;Supreme&#39;, &#39;Court&#39;, &#39;and&#39;, &#39;diplomatic&#39;, &#39;corps&#39;, &#39;,&#39;, &#39;distinguished&#39;, &#39;guests&#39;, &#39;,&#39;, &#39;and&#39;, &#39;fellow&#39;, &#39;citizens&#39;, &#39;:&#39;, &#39;Today&#39;, &#39;our&#39;, &#39;nation&#39;, &#39;lost&#39;, &#39;a&#39;, &#39;beloved&#39;, &#39;,&#39;, &#39;graceful&#39;, &#39;,&#39;, &#39;courageous&#39;, &#39;woman&#39;, &#39;who&#39;, &#39;called&#39;, &#39;America&#39;, &#39;to&#39;, &#39;its&#39;, &#39;founding&#39;, &#39;ideals&#39;, &#39;and&#39;, &#39;carried&#39;, &#39;on&#39;, &#39;a&#39;, &#39;noble&#39;, &#39;dream&#39;, &#39;.&#39;, &#39;Tonight&#39;, &#39;we&#39;, &#39;are&#39;, &#39;comforted&#39;, &#39;by&#39;, &#39;the&#39;, &#39;hope&#39;, &#39;of&#39;, &#39;a&#39;, &#39;glad&#39;, &#39;reunion&#39;, &#39;with&#39;, &#39;the&#39;, &#39;husband&#39;, &#39;who&#39;]
+---
+top words : 
+[(&#39;,&#39;, 323),
+ (&#39;.&#39;, 285),
+ (&#39;the&#39;, 260),
+ (&#39;and&#39;, 240),
+ (&#39;of&#39;, 186),
+ (&#39;to&#39;, 170),
+ (&#39;in&#39;, 122),
+ (&#39;a&#39;, 105),
+ (&#39;our&#39;, 96),
+ (&#39;we&#39;, 85),
+ (&#39;(&#39;, 68),
+ (&#39;that&#39;, 66),
+ (&#39;.)&#39;, 65),
+ (&#39;is&#39;, 65),
+ (&#39;Applause&#39;, 64),
+ (&#39;--&#39;, 61),
+ (&#39;will&#39;, 59),
+ (&#39;America&#39;, 43),
+ (&#39;We&#39;, 38),
+ (&#34;&#39;&#34;, 37),
+ (&#39;by&#39;, 37),
+ (&#39;are&#39;, 36),
+ (&#39;have&#39;, 34),
+ (&#39;I&#39;, 32),
+ (&#39;for&#39;, 30),
+ (&#39;-&#39;, 28),
+ (&#39;world&#39;, 27),
+ (&#39;with&#39;, 26),
+ (&#39;not&#39;, 26),
+ (&#39;this&#39;, 25),
+ (&#39;has&#39;, 25),
+ (&#39;be&#39;, 23),
+ (&#39;or&#39;, 23),
+ (&#39;from&#39;, 23),
+ (&#39;more&#39;, 23),
+ (&#39;on&#39;, 22),
+ (&#39;it&#39;, 22),
+ (&#39;us&#39;, 22),
+ (&#39;people&#39;, 22),
+ (&#39;must&#39;, 20),
+ (&#39;their&#39;, 20),
+ (&#39;all&#39;, 19),
+ (&#39;And&#39;, 19),
+ (&#39;The&#39;, 18),
+ (&#39;American&#39;, 18),
+ (&#39;nation&#39;, 17),
+ (&#39;at&#39;, 17),
+ (&#39;country&#39;, 17),
+ (&#39;freedom&#39;, 17),
+ (&#39;than&#39;, 17)]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13177,28 +13644,93 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
-<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">expanduser</span>
-<span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/data/nltk_data&quot;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">stopwords</span>
+<span class="c1"># from os.path import expanduser</span>
+<span class="c1"># nltk.data.path.append( expanduser(&quot;~&quot;) + &quot;/data/nltk_data&quot;)</span>
+
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">state_union</span>
 
 <span class="n">gw2006_words</span> <span class="o">=</span> <span class="n">state_union</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;2006-GWBush.txt&#39;</span><span class="p">)</span>
 <span class="n">gw2006_words_lower</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">gw2006_words</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(gw2006_words) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">gw2006_words</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+</pre></div>
 
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len(gw2006_words) :  6515
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Stop words </span>
+
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">stopwords</span>
 <span class="n">stop_words_en</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;len(stop_words_en) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">stop_words_en</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;stop words_en : </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">stop_words_en</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">gw2006_words_lower</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_en</span><span class="p">]</span>
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len(stop_words_en) :  179
+stop words_en : 
+ [&#39;a&#39;, &#39;about&#39;, &#39;above&#39;, &#39;after&#39;, &#39;again&#39;, &#39;against&#39;, &#39;ain&#39;, &#39;all&#39;, &#39;am&#39;, &#39;an&#39;, &#39;and&#39;, &#39;any&#39;, &#39;are&#39;, &#39;aren&#39;, &#34;aren&#39;t&#34;, &#39;as&#39;, &#39;at&#39;, &#39;be&#39;, &#39;because&#39;, &#39;been&#39;, &#39;before&#39;, &#39;being&#39;, &#39;below&#39;, &#39;between&#39;, &#39;both&#39;, &#39;but&#39;, &#39;by&#39;, &#39;can&#39;, &#39;couldn&#39;, &#34;couldn&#39;t&#34;, &#39;d&#39;, &#39;did&#39;, &#39;didn&#39;, &#34;didn&#39;t&#34;, &#39;do&#39;, &#39;does&#39;, &#39;doesn&#39;, &#34;doesn&#39;t&#34;, &#39;doing&#39;, &#39;don&#39;, &#34;don&#39;t&#34;, &#39;down&#39;, &#39;during&#39;, &#39;each&#39;, &#39;few&#39;, &#39;for&#39;, &#39;from&#39;, &#39;further&#39;, &#39;had&#39;, &#39;hadn&#39;, &#34;hadn&#39;t&#34;, &#39;has&#39;, &#39;hasn&#39;, &#34;hasn&#39;t&#34;, &#39;have&#39;, &#39;haven&#39;, &#34;haven&#39;t&#34;, &#39;having&#39;, &#39;he&#39;, &#39;her&#39;, &#39;here&#39;, &#39;hers&#39;, &#39;herself&#39;, &#39;him&#39;, &#39;himself&#39;, &#39;his&#39;, &#39;how&#39;, &#39;i&#39;, &#39;if&#39;, &#39;in&#39;, &#39;into&#39;, &#39;is&#39;, &#39;isn&#39;, &#34;isn&#39;t&#34;, &#39;it&#39;, &#34;it&#39;s&#34;, &#39;its&#39;, &#39;itself&#39;, &#39;just&#39;, &#39;ll&#39;, &#39;m&#39;, &#39;ma&#39;, &#39;me&#39;, &#39;mightn&#39;, &#34;mightn&#39;t&#34;, &#39;more&#39;, &#39;most&#39;, &#39;mustn&#39;, &#34;mustn&#39;t&#34;, &#39;my&#39;, &#39;myself&#39;, &#39;needn&#39;, &#34;needn&#39;t&#34;, &#39;no&#39;, &#39;nor&#39;, &#39;not&#39;, &#39;now&#39;, &#39;o&#39;, &#39;of&#39;, &#39;off&#39;, &#39;on&#39;, &#39;once&#39;, &#39;only&#39;, &#39;or&#39;, &#39;other&#39;, &#39;our&#39;, &#39;ours&#39;, &#39;ourselves&#39;, &#39;out&#39;, &#39;over&#39;, &#39;own&#39;, &#39;re&#39;, &#39;s&#39;, &#39;same&#39;, &#39;shan&#39;, &#34;shan&#39;t&#34;, &#39;she&#39;, &#34;she&#39;s&#34;, &#39;should&#39;, &#34;should&#39;ve&#34;, &#39;shouldn&#39;, &#34;shouldn&#39;t&#34;, &#39;so&#39;, &#39;some&#39;, &#39;such&#39;, &#39;t&#39;, &#39;than&#39;, &#39;that&#39;, &#34;that&#39;ll&#34;, &#39;the&#39;, &#39;their&#39;, &#39;theirs&#39;, &#39;them&#39;, &#39;themselves&#39;, &#39;then&#39;, &#39;there&#39;, &#39;these&#39;, &#39;they&#39;, &#39;this&#39;, &#39;those&#39;, &#39;through&#39;, &#39;to&#39;, &#39;too&#39;, &#39;under&#39;, &#39;until&#39;, &#39;up&#39;, &#39;ve&#39;, &#39;very&#39;, &#39;was&#39;, &#39;wasn&#39;, &#34;wasn&#39;t&#34;, &#39;we&#39;, &#39;were&#39;, &#39;weren&#39;, &#34;weren&#39;t&#34;, &#39;what&#39;, &#39;when&#39;, &#39;where&#39;, &#39;which&#39;, &#39;while&#39;, &#39;who&#39;, &#39;whom&#39;, &#39;why&#39;, &#39;will&#39;, &#39;with&#39;, &#39;won&#39;, &#34;won&#39;t&#34;, &#39;wouldn&#39;, &#34;wouldn&#39;t&#34;, &#39;y&#39;, &#39;you&#39;, &#34;you&#39;d&#34;, &#34;you&#39;ll&#34;, &#34;you&#39;re&#34;, &#34;you&#39;ve&#34;, &#39;your&#39;, &#39;yours&#39;, &#39;yourself&#39;, &#39;yourselves&#39;]
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">gw2006_words_lower</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_en</span><span class="p">]</span>
 <span class="c1">## TODO : how many words in cleaned</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned) : &quot;</span><span class="p">,</span> <span class="err">???</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cleaned text:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cleaned</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">200</span><span class="p">])</span>
@@ -13207,36 +13739,227 @@ div#notebook {
 <span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">cleaned</span><span class="p">)</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;most common words in cleaned :</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">,</span> <span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+</pre></div>
 
-<span class="c1"># we need to remove punctuation</span>
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len(cleaned) :  3975
+---
+cleaned text:
+ [&#39;george&#39;, &#39;w&#39;, &#39;.&#39;, &#39;bush&#39;, &#34;&#39;&#34;, &#39;address&#39;, &#39;joint&#39;, &#39;session&#39;, &#39;congress&#39;, &#39;state&#39;, &#39;union&#39;, &#39;january&#39;, &#39;31&#39;, &#39;,&#39;, &#39;2006&#39;, &#39;president&#39;, &#39;:&#39;, &#39;thank&#39;, &#39;.&#39;, &#39;mr&#39;, &#39;.&#39;, &#39;speaker&#39;, &#39;,&#39;, &#39;vice&#39;, &#39;president&#39;, &#39;cheney&#39;, &#39;,&#39;, &#39;members&#39;, &#39;congress&#39;, &#39;,&#39;, &#39;members&#39;, &#39;supreme&#39;, &#39;court&#39;, &#39;diplomatic&#39;, &#39;corps&#39;, &#39;,&#39;, &#39;distinguished&#39;, &#39;guests&#39;, &#39;,&#39;, &#39;fellow&#39;, &#39;citizens&#39;, &#39;:&#39;, &#39;today&#39;, &#39;nation&#39;, &#39;lost&#39;, &#39;beloved&#39;, &#39;,&#39;, &#39;graceful&#39;, &#39;,&#39;, &#39;courageous&#39;, &#39;woman&#39;, &#39;called&#39;, &#39;america&#39;, &#39;founding&#39;, &#39;ideals&#39;, &#39;carried&#39;, &#39;noble&#39;, &#39;dream&#39;, &#39;.&#39;, &#39;tonight&#39;, &#39;comforted&#39;, &#39;hope&#39;, &#39;glad&#39;, &#39;reunion&#39;, &#39;husband&#39;, &#39;taken&#39;, &#39;long&#39;, &#39;ago&#39;, &#39;,&#39;, &#39;grateful&#39;, &#39;good&#39;, &#39;life&#39;, &#39;coretta&#39;, &#39;scott&#39;, &#39;king&#39;, &#39;.&#39;, &#39;(&#39;, &#39;applause&#39;, &#39;.)&#39;, &#39;president&#39;, &#39;george&#39;, &#39;w&#39;, &#39;.&#39;, &#39;bush&#39;, &#39;reacts&#39;, &#39;applause&#39;, &#39;state&#39;, &#39;union&#39;, &#39;address&#39;, &#39;capitol&#39;, &#39;,&#39;, &#39;tuesday&#39;, &#39;,&#39;, &#39;jan&#39;, &#39;.&#39;, &#39;31&#39;, &#39;,&#39;, &#39;2006&#39;, &#39;.&#39;, &#39;white&#39;, &#39;house&#39;, &#39;photo&#39;, &#39;eric&#39;, &#39;draperevery&#39;, &#39;time&#39;, &#34;&#39;&#34;, &#39;invited&#39;, &#39;rostrum&#39;, &#39;,&#39;, &#34;&#39;&#34;, &#39;humbled&#39;, &#39;privilege&#39;, &#39;,&#39;, &#39;mindful&#39;, &#39;history&#39;, &#34;&#39;&#34;, &#39;seen&#39;, &#39;together&#39;, &#39;.&#39;, &#39;gathered&#39;, &#39;capitol&#39;, &#39;dome&#39;, &#39;moments&#39;, &#39;national&#39;, &#39;mourning&#39;, &#39;national&#39;, &#39;achievement&#39;, &#39;.&#39;, &#39;served&#39;, &#39;america&#39;, &#39;one&#39;, &#39;consequential&#39;, &#39;periods&#39;, &#39;history&#39;, &#39;--&#39;, &#39;honor&#39;, &#39;serve&#39;, &#39;.&#39;, &#39;system&#39;, &#39;two&#39;, &#39;parties&#39;, &#39;,&#39;, &#39;two&#39;, &#39;chambers&#39;, &#39;,&#39;, &#39;two&#39;, &#39;elected&#39;, &#39;branches&#39;, &#39;,&#39;, &#39;always&#39;, &#39;differences&#39;, &#39;debate&#39;, &#39;.&#39;, &#39;even&#39;, &#39;tough&#39;, &#39;debates&#39;, &#39;conducted&#39;, &#39;civil&#39;, &#39;tone&#39;, &#39;,&#39;, &#39;differences&#39;, &#39;cannot&#39;, &#39;allowed&#39;, &#39;harden&#39;, &#39;anger&#39;, &#39;.&#39;, &#39;confront&#39;, &#39;great&#39;, &#39;issues&#39;, &#39;us&#39;, &#39;,&#39;, &#39;must&#39;, &#39;act&#39;, &#39;spirit&#39;, &#39;goodwill&#39;, &#39;respect&#39;, &#39;one&#39;, &#39;another&#39;, &#39;--&#39;, &#39;part&#39;, &#39;.&#39;, &#39;tonight&#39;, &#39;state&#39;, &#39;union&#39;, &#39;strong&#39;, &#39;--&#39;, &#39;together&#39;, &#39;make&#39;, &#39;stronger&#39;, &#39;.&#39;, &#39;(&#39;, &#39;applause&#39;, &#39;.)&#39;, &#39;decisive&#39;, &#39;year&#39;, &#39;,&#39;, &#39;make&#39;, &#39;choices&#39;, &#39;determine&#39;]
+---
+most common words in cleaned :
+ [(&#39;,&#39;, 323), (&#39;.&#39;, 285), (&#39;(&#39;, 68), (&#39;applause&#39;, 67), (&#39;.)&#39;, 65), (&#39;--&#39;, 61), (&#39;america&#39;, 43), (&#34;&#39;&#34;, 37), (&#39;-&#39;, 28), (&#39;world&#39;, 27), (&#39;us&#39;, 22), (&#39;people&#39;, 22), (&#39;must&#39;, 20), (&#39;american&#39;, 18), (&#39;nation&#39;, 17), (&#39;country&#39;, 17), (&#39;freedom&#39;, 17), (&#39;economy&#39;, 16), (&#39;:&#39;, 15), (&#39;congress&#39;, 14), (&#39;new&#39;, 14), (&#39;also&#39;, 14), (&#39;members&#39;, 11), (&#39;tonight&#39;, 11), (&#39;one&#39;, 11), (&#39;make&#39;, 11), (&#39;year&#39;, 11), (&#39;every&#39;, 11), (&#39;government&#39;, 11), (&#39;years&#39;, 11), (&#39;americans&#39;, 11), (&#39;life&#39;, 10), (&#39;act&#39;, 10), (&#39;yet&#39;, 10), (&#39;states&#39;, 10), (&#39;lead&#39;, 10), (&#39;security&#39;, 10), (&#39;support&#39;, 10), (&#39;president&#39;, 9), (&#39;citizens&#39;, 9), (&#39;two&#39;, 9), (&#39;great&#39;, 9), (&#39;united&#39;, 9), (&#39;fight&#39;, 9), (&#39;would&#39;, 9), (&#39;hopeful&#39;, 9), (&#39;state&#39;, 8), (&#39;union&#39;, 8), (&#39;hope&#39;, 8), (&#39;house&#39;, 8)]
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove punctuation</span>
 <span class="n">stop_words_en</span><span class="o">.</span><span class="n">update</span><span class="p">([</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="s1">&#39;!&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;)&#39;</span><span class="p">,</span> <span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="s1">&#39;]&#39;</span><span class="p">,</span> <span class="s1">&#39;{&#39;</span><span class="p">,</span> <span class="s1">&#39;}&#39;</span><span class="p">])</span> 
 
 <span class="n">cleaned2</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">gw2006_words_lower</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_en</span><span class="p">]</span>
 <span class="c1">## TODO : how many words in cleaned</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned2) : &quot;</span><span class="p">,</span> <span class="err">???</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned2) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned2</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
 <span class="c1">## TODO - calculate FreqDist for cleaned2</span>
-<span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="err">???</span><span class="p">)</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;most common words in cleaned2 :</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">,</span> <span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
-
-<span class="c1">## TODO :  further cleanup</span>
-<span class="c1">## Inspecting the output, we see a couple of punctuations that need cleaning up</span>
-<span class="c1">## add them to stop words list and clean up again</span>
-<span class="n">stop_words_en</span><span class="o">.</span><span class="n">update</span><span class="p">([</span><span class="s1">&#39;.)&#39;</span><span class="p">,</span> <span class="s1">&#39;??&#39;</span><span class="p">])</span> 
-<span class="n">cleaned3</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">gw2006_words_lower</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_en</span><span class="p">]</span>
-<span class="c1">## TODO : len of cleaned3</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned3) : &quot;</span><span class="p">,</span> <span class="err">???</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
-
-<span class="c1">## TODO : Commpute FreqDist for cleaned3</span>
-<span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="err">???</span><span class="p">)</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;most common words in cleaned3 :</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">,</span> <span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
+<span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">cleaned2</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;most common words in cleaned2&quot;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len(cleaned2) :  3210
+---
+most common words in cleaned2
+[(&#39;applause&#39;, 67),
+ (&#39;.)&#39;, 65),
+ (&#39;--&#39;, 61),
+ (&#39;america&#39;, 43),
+ (&#39;world&#39;, 27),
+ (&#39;us&#39;, 22),
+ (&#39;people&#39;, 22),
+ (&#39;must&#39;, 20),
+ (&#39;american&#39;, 18),
+ (&#39;nation&#39;, 17),
+ (&#39;country&#39;, 17),
+ (&#39;freedom&#39;, 17),
+ (&#39;economy&#39;, 16),
+ (&#39;congress&#39;, 14),
+ (&#39;new&#39;, 14),
+ (&#39;also&#39;, 14),
+ (&#39;members&#39;, 11),
+ (&#39;tonight&#39;, 11),
+ (&#39;one&#39;, 11),
+ (&#39;make&#39;, 11),
+ (&#39;year&#39;, 11),
+ (&#39;every&#39;, 11),
+ (&#39;government&#39;, 11),
+ (&#39;years&#39;, 11),
+ (&#39;americans&#39;, 11),
+ (&#39;life&#39;, 10),
+ (&#39;act&#39;, 10),
+ (&#39;yet&#39;, 10),
+ (&#39;states&#39;, 10),
+ (&#39;lead&#39;, 10),
+ (&#39;security&#39;, 10),
+ (&#39;support&#39;, 10),
+ (&#39;president&#39;, 9),
+ (&#39;citizens&#39;, 9),
+ (&#39;two&#39;, 9),
+ (&#39;great&#39;, 9),
+ (&#39;united&#39;, 9),
+ (&#39;fight&#39;, 9),
+ (&#39;would&#39;, 9),
+ (&#39;hopeful&#39;, 9),
+ (&#39;state&#39;, 8),
+ (&#39;union&#39;, 8),
+ (&#39;hope&#39;, 8),
+ (&#39;house&#39;, 8),
+ (&#39;like&#39;, 8),
+ (&#39;military&#39;, 8),
+ (&#39;never&#39;, 8),
+ (&#39;know&#39;, 8),
+ (&#39;need&#39;, 8),
+ (&#39;energy&#39;, 8)]
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## TODO :  further cleanup</span>
+<span class="c1">## Inspecting the output, we see a couple of punctuations that need cleaning up</span>
+<span class="c1">## add them to stop words list and clean up again</span>
+<span class="n">stop_words_en</span><span class="o">.</span><span class="n">update</span><span class="p">([</span><span class="s1">&#39;.)&#39;</span><span class="p">,</span> <span class="s1">&#39;??&#39;</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">])</span> 
+<span class="n">cleaned3</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">gw2006_words_lower</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_en</span><span class="p">]</span>
+<span class="c1">## TODO : len of cleaned3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned3) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+
+<span class="c1">## TODO : Commpute FreqDist for cleaned3</span>
+<span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">cleaned3</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;most common words in cleaned3&quot;</span> <span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len(cleaned3) :  3084
+---
+most common words in cleaned3
+[(&#39;applause&#39;, 67),
+ (&#39;america&#39;, 43),
+ (&#39;world&#39;, 27),
+ (&#39;us&#39;, 22),
+ (&#39;people&#39;, 22),
+ (&#39;must&#39;, 20),
+ (&#39;american&#39;, 18),
+ (&#39;nation&#39;, 17),
+ (&#39;country&#39;, 17),
+ (&#39;freedom&#39;, 17),
+ (&#39;economy&#39;, 16),
+ (&#39;congress&#39;, 14),
+ (&#39;new&#39;, 14),
+ (&#39;also&#39;, 14),
+ (&#39;members&#39;, 11),
+ (&#39;tonight&#39;, 11),
+ (&#39;one&#39;, 11),
+ (&#39;make&#39;, 11),
+ (&#39;year&#39;, 11),
+ (&#39;every&#39;, 11),
+ (&#39;government&#39;, 11),
+ (&#39;years&#39;, 11),
+ (&#39;americans&#39;, 11),
+ (&#39;life&#39;, 10),
+ (&#39;act&#39;, 10),
+ (&#39;yet&#39;, 10),
+ (&#39;states&#39;, 10),
+ (&#39;lead&#39;, 10),
+ (&#39;security&#39;, 10),
+ (&#39;support&#39;, 10),
+ (&#39;president&#39;, 9),
+ (&#39;citizens&#39;, 9),
+ (&#39;two&#39;, 9),
+ (&#39;great&#39;, 9),
+ (&#39;united&#39;, 9),
+ (&#39;fight&#39;, 9),
+ (&#39;would&#39;, 9),
+ (&#39;hopeful&#39;, 9),
+ (&#39;state&#39;, 8),
+ (&#39;union&#39;, 8),
+ (&#39;hope&#39;, 8),
+ (&#39;house&#39;, 8),
+ (&#39;like&#39;, 8),
+ (&#39;military&#39;, 8),
+ (&#39;never&#39;, 8),
+ (&#39;know&#39;, 8),
+ (&#39;need&#39;, 8),
+ (&#39;energy&#39;, 8),
+ (&#39;competitive&#39;, 8),
+ (&#39;tax&#39;, 8)]
+---
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13253,17 +13976,17 @@ In this section, we are going to load and analyze custom dataset</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
-<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">expanduser</span>
-<span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/data/nltk_data&quot;</span><span class="p">)</span>
+<span class="c1"># from os.path import expanduser</span>
+<span class="c1"># nltk.data.path.append( expanduser(&quot;~&quot;) + &quot;/data/nltk_data&quot;)</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">stopwords</span>
 <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="k">import</span> <span class="n">word_tokenize</span>
 <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="k">import</span> <span class="n">wordpunct_tokenize</span>
 
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../data/text/sotu-2014-obama.txt&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/data/text/state-of-the-unions/2014-Obama.txt&#39;</span><span class="p">)</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(text)&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;text:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">500</span><span class="p">])</span>
@@ -13272,7 +13995,7 @@ In this section, we are going to load and analyze custom dataset</p>
 <span class="c1"># Tokenize, split into words</span>
 <span class="n">words</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 <span class="n">words_lower</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(words) : &quot;</span><span class="p">,</span> <span class="err">???</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(words) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;words:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">words</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;words_lower:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">words_lower</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
@@ -13290,10 +14013,10 @@ In this section, we are going to load and analyze custom dataset</p>
 <span class="n">stop_words_en</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span>
 
 <span class="n">cleaned1</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">words_lower</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_en</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned1) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned1) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned1</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
-<span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="err">???</span><span class="p">)</span>
+<span class="n">fdist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">cleaned1</span><span class="p">)</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;most common in cleaned1 :</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">,</span> <span class="n">fdist</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
@@ -13309,6 +14032,46 @@ In this section, we are going to load and analyze custom dataset</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len(text) 42605
+text:
+ RESIDENT OBAMA: Thank you. (Applause.) Thank you so much. Thank you. Thank you. (Applause.) Thank you so much.
+
+Mr. Speaker, Mr. Vice President, members of Congress, my fellow Americans, today in America, a teacher spent extra time with a student who needed it and did her part to lift America&#39;s graduation rate to its highest levels in more than three decades.
+
+An entrepreneur flipped on the lights in her tech startup and did her part to add to the more than 8 million new jobs our businesses hav
+---
+len(words) :  8568
+words:
+ [&#39;PRESIDENT&#39;, &#39;OBAMA&#39;, &#39;:&#39;, &#39;Thank&#39;, &#39;you&#39;, &#39;.&#39;, &#39;(&#39;, &#39;Applause&#39;, &#39;.&#39;, &#39;)&#39;, &#39;Thank&#39;, &#39;you&#39;, &#39;so&#39;, &#39;much&#39;, &#39;.&#39;, &#39;Thank&#39;, &#39;you&#39;, &#39;.&#39;, &#39;Thank&#39;, &#39;you&#39;, &#39;.&#39;, &#39;(&#39;, &#39;Applause&#39;, &#39;.&#39;, &#39;)&#39;, &#39;Thank&#39;, &#39;you&#39;, &#39;so&#39;, &#39;much&#39;, &#39;.&#39;, &#39;Mr.&#39;, &#39;Speaker&#39;, &#39;,&#39;, &#39;Mr.&#39;, &#39;Vice&#39;, &#39;President&#39;, &#39;,&#39;, &#39;members&#39;, &#39;of&#39;, &#39;Congress&#39;, &#39;,&#39;, &#39;my&#39;, &#39;fellow&#39;, &#39;Americans&#39;, &#39;,&#39;, &#39;today&#39;, &#39;in&#39;, &#39;America&#39;, &#39;,&#39;, &#39;a&#39;]
+---
+words_lower:
+ [&#39;president&#39;, &#39;obama&#39;, &#39;:&#39;, &#39;thank&#39;, &#39;you&#39;, &#39;.&#39;, &#39;(&#39;, &#39;applause&#39;, &#39;.&#39;, &#39;)&#39;, &#39;thank&#39;, &#39;you&#39;, &#39;so&#39;, &#39;much&#39;, &#39;.&#39;, &#39;thank&#39;, &#39;you&#39;, &#39;.&#39;, &#39;thank&#39;, &#39;you&#39;, &#39;.&#39;, &#39;(&#39;, &#39;applause&#39;, &#39;.&#39;, &#39;)&#39;, &#39;thank&#39;, &#39;you&#39;, &#39;so&#39;, &#39;much&#39;, &#39;.&#39;, &#39;mr.&#39;, &#39;speaker&#39;, &#39;,&#39;, &#39;mr.&#39;, &#39;vice&#39;, &#39;president&#39;, &#39;,&#39;, &#39;members&#39;, &#39;of&#39;, &#39;congress&#39;, &#39;,&#39;, &#39;my&#39;, &#39;fellow&#39;, &#39;americans&#39;, &#39;,&#39;, &#39;today&#39;, &#39;in&#39;, &#39;america&#39;, &#39;,&#39;, &#39;a&#39;]
+---
+most common in words :
+ [(&#39;.&#39;, 454), (&#39;,&#39;, 422), (&#39;the&#39;, 271), (&#39;to&#39;, 263), (&#39;and&#39;, 205), (&#39;of&#39;, 151), (&#39;a&#39;, 125), (&#39;our&#39;, 114), (&#39;that&#39;, 113), (&#39;we&#39;, 108), (&#39;(&#39;, 106), (&#39;)&#39;, 106), (&#34;&#39;s&#34;, 105), (&#39;in&#39;, 104), (&#39;for&#39;, 70), (&#39;I&#39;, 69), (&#39;more&#39;, 64), (&#39;is&#39;, 64), (&#39;--&#39;, 60), (&#39;with&#39;, 52), (&#39;on&#39;, 50), (&#39;And&#39;, 50), (&#39;Applause&#39;, 49), (&#39;this&#39;, 49), (&#39;applause&#39;, 48), (&#39;have&#39;, 45), (&#39;not&#39;, 42), (&#39;will&#39;, 40), (&#39;America&#39;, 39), (&#39;can&#39;, 39), (&#39;it&#39;, 35), (&#39;their&#39;, 35), (&#39;do&#39;, 32), (&#39;help&#39;, 31), (&#39;by&#39;, 31), (&#39;you&#39;, 30), (&#39;are&#39;, 29), (&#39;than&#39;, 28), (&#39;new&#39;, 28), (&#39;But&#39;, 28), (&#39;work&#39;, 28), (&#39;Americans&#39;, 27), (&#39;Cheers&#39;, 27), (&#39;as&#39;, 26), (&#39;jobs&#39;, 25), (&#39;from&#39;, 25), (&#39;all&#39;, 25), (&#39;has&#39;, 25), (&#39;people&#39;, 24), (&#39;or&#39;, 24)]
+---
+len(cleaned1) :  5284
+---
+most common in cleaned1 :
+ [(&#39;.&#39;, 454), (&#39;,&#39;, 422), (&#39;(&#39;, 106), (&#39;)&#39;, 106), (&#34;&#39;s&#34;, 105), (&#39;applause&#39;, 97), (&#39;--&#39;, 60), (&#39;america&#39;, 39), (&#39;help&#39;, 32), (&#39;cheers&#39;, 32), (&#39;new&#39;, 29), (&#39;work&#39;, 28), (&#39;americans&#39;, 27), (&#39;jobs&#39;, 25), (&#39;people&#39;, 24), (&#39;every&#39;, 24), (&#39;let&#39;, 24), (&#34;n&#39;t&#34;, 24), (&#34;&#39;re&#34;, 23), (&#39;make&#39;, 22), (&#39;;&#39;, 22), (&#39;american&#39;, 21), (&#39;congress&#39;, 20), (&#39;one&#39;, 20), (&#39;us&#39;, 20), (&#39;get&#39;, 20), (&#39;years&#39;, 19), (&#39;like&#39;, 19), (&#39;today&#39;, 17), (&#39;year&#39;, 17), (&#39;country&#39;, 16), (&#39;time&#39;, 15), (&#39;businesses&#39;, 15), (&#39;first&#39;, 15), (&#39;know&#39;, 15), (&#39;:&#39;, 14), (&#39;world&#39;, 14), (&#39;give&#39;, 14), (&#39;states&#39;, 14), (&#34;&#39;ll&#34;, 14), (&#39;tonight&#39;, 13), (&#39;together&#39;, 13), (&#39;job&#39;, 13), (&#39;need&#39;, 13), (&#39;support&#39;, 13), (&#39;home&#39;, 12), (&#39;opportunity&#39;, 12), (&#39;working&#39;, 12), (&#39;economy&#39;, 12), (&#34;&#39;ve&#34;, 12)]
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13320,12 +14083,12 @@ In this section, we are going to load and analyze custom dataset</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
-<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">expanduser</span>
-<span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/data/nltk_data&quot;</span><span class="p">)</span>
+<span class="c1"># from os.path import expanduser</span>
+<span class="c1"># nltk.data.path.append( expanduser(&quot;~&quot;) + &quot;/data/nltk_data&quot;)</span>
 <span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="k">import</span> <span class="n">SnowballStemmer</span>
 <span class="kn">from</span> <span class="nn">nltk.stem.porter</span> <span class="k">import</span> <span class="n">PorterStemmer</span>
 <span class="kn">from</span> <span class="nn">nltk.stem.lancaster</span> <span class="k">import</span> <span class="n">LancasterStemmer</span>
@@ -13354,6 +14117,37 @@ In this section, we are going to load and analyze custom dataset</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>word,  snowball_stem,   porter_stem, lancaster stem
+run,  run,  run,  run
+running,  run,  run,  run
+* like,  like,  like,  lik
+* liked,  like,  like,  lik
+snow,  snow,  snow,  snow
+snowing,  snow,  snow,  snow
+dog,  dog,  dog,  dog
+dogs,  dog,  dog,  dog
+* maximum,  maximum,  maximum,  maxim
+* multiply,  multipli,  multipli,  multiply
+* crying,  cri,  cri,  cry
+leaves,  leav,  leav,  leav
+* fairly,  fair,  fairli,  fair
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13365,22 +14159,22 @@ In this section, we are going to load and analyze custom dataset</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
-<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">expanduser</span>
-<span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/data/nltk_data&quot;</span><span class="p">)</span>
+<span class="c1"># from os.path import expanduser</span>
+<span class="c1"># nltk.data.path.append( expanduser(&quot;~&quot;) + &quot;/data/nltk_data&quot;)</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">stopwords</span>
 <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="k">import</span> <span class="n">word_tokenize</span>
 <span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="k">import</span> <span class="n">SnowballStemmer</span>
 
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../data/text/sotu-2014-obama.txt&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/data/text/state-of-the-unions/2014-Obama.txt&#39;</span><span class="p">)</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="n">words</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 
 <span class="c1">## TODO : Cleanup 1 : lowercase it all</span>
-<span class="n">words_lower</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="err">???</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span>
+<span class="n">words_lower</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span>
 
 
 <span class="c1">## cleanup 2 - remove stop words</span>
@@ -13388,7 +14182,7 @@ In this section, we are going to load and analyze custom dataset</p>
 <span class="n">stop_words_english</span><span class="o">.</span><span class="n">update</span><span class="p">([</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="s1">&#39;!&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;)&#39;</span><span class="p">,</span> <span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="s1">&#39;]&#39;</span><span class="p">,</span> <span class="s1">&#39;{&#39;</span><span class="p">,</span> <span class="s1">&#39;}&#39;</span><span class="p">])</span>
 <span class="n">stop_words_english</span><span class="o">.</span><span class="n">update</span><span class="p">([</span><span class="s2">&quot;&#39;s&quot;</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">])</span>
 <span class="c1">## TODO : iterate through &#39;words_lower&#39;</span>
-<span class="n">cleaned1</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="err">???</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_english</span><span class="p">]</span>
+<span class="n">cleaned1</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">words_lower</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_english</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;len(cleaned1) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned1</span><span class="p">))</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;cleaned1:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cleaned1</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
@@ -13396,17 +14190,77 @@ In this section, we are going to load and analyze custom dataset</p>
 <span class="c1">##  Cleanup 3 - stem</span>
 <span class="n">stemmer</span> <span class="o">=</span> <span class="n">SnowballStemmer</span><span class="p">(</span><span class="s2">&quot;english&quot;</span><span class="p">)</span>
 <span class="c1">## TODO : iterate through &#39;cleaned1&#39;</span>
-<span class="n">cleaned2</span> <span class="o">=</span> <span class="p">[</span><span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="err">???</span><span class="p">]</span>
+<span class="n">cleaned2</span> <span class="o">=</span> <span class="p">[</span><span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">cleaned1</span><span class="p">]</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;len(cleaned2) : &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned2</span><span class="p">))</span>
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;cleaned2:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cleaned2</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
 
 <span class="c1">## TODO : Wordcount on &#39;cleaned2&#39;</span>
-<span class="n">wc</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">(</span><span class="err">???</span><span class="p">)</span>
+<span class="n">wc</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">(</span><span class="n">cleaned2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;top 20 word count(cleaned2) : &quot;</span> <span class="p">)</span>
 <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">frequency</span> <span class="ow">in</span> <span class="n">wc</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="si">{word}</span><span class="s2"> = </span><span class="si">{frequency}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>len(cleaned1) :  3991
+cleaned1:
+ [&#39;president&#39;, &#39;obama&#39;, &#39;thank&#39;, &#39;applause&#39;, &#39;thank&#39;, &#39;much&#39;, &#39;thank&#39;, &#39;thank&#39;, &#39;applause&#39;, &#39;thank&#39;, &#39;much&#39;, &#39;mr.&#39;, &#39;speaker&#39;, &#39;mr.&#39;, &#39;vice&#39;, &#39;president&#39;, &#39;members&#39;, &#39;congress&#39;, &#39;fellow&#39;, &#39;americans&#39;, &#39;today&#39;, &#39;america&#39;, &#39;teacher&#39;, &#39;spent&#39;, &#39;extra&#39;, &#39;time&#39;, &#39;student&#39;, &#39;needed&#39;, &#39;part&#39;, &#39;lift&#39;, &#39;america&#39;, &#39;graduation&#39;, &#39;rate&#39;, &#39;highest&#39;, &#39;levels&#39;, &#39;three&#39;, &#39;decades&#39;, &#39;entrepreneur&#39;, &#39;flipped&#39;, &#39;lights&#39;, &#39;tech&#39;, &#39;startup&#39;, &#39;part&#39;, &#39;add&#39;, &#39;8&#39;, &#39;million&#39;, &#39;new&#39;, &#39;jobs&#39;, &#39;businesses&#39;, &#39;created&#39;]
+---
+len(cleaned2) :  3991
+cleaned2:
+ [&#39;presid&#39;, &#39;obama&#39;, &#39;thank&#39;, &#39;applaus&#39;, &#39;thank&#39;, &#39;much&#39;, &#39;thank&#39;, &#39;thank&#39;, &#39;applaus&#39;, &#39;thank&#39;, &#39;much&#39;, &#39;mr.&#39;, &#39;speaker&#39;, &#39;mr.&#39;, &#39;vice&#39;, &#39;presid&#39;, &#39;member&#39;, &#39;congress&#39;, &#39;fellow&#39;, &#39;american&#39;, &#39;today&#39;, &#39;america&#39;, &#39;teacher&#39;, &#39;spent&#39;, &#39;extra&#39;, &#39;time&#39;, &#39;student&#39;, &#39;need&#39;, &#39;part&#39;, &#39;lift&#39;, &#39;america&#39;, &#39;graduat&#39;, &#39;rate&#39;, &#39;highest&#39;, &#39;level&#39;, &#39;three&#39;, &#39;decad&#39;, &#39;entrepreneur&#39;, &#39;flip&#39;, &#39;light&#39;, &#39;tech&#39;, &#39;startup&#39;, &#39;part&#39;, &#39;add&#39;, &#39;8&#39;, &#39;million&#39;, &#39;new&#39;, &#39;job&#39;, &#39;busi&#39;, &#39;creat&#39;]
+---
+top 20 word count(cleaned2) : 
+applaus = 97
+american = 48
+work = 44
+help = 41
+america = 40
+job = 38
+year = 36
+cheer = 33
+new = 29
+make = 25
+let = 25
+peopl = 24
+everi = 24
+n&#39;t = 24
+busi = 23
+re = 23
+need = 21
+one = 21
+congress = 20
+state = 20
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
