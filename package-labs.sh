@@ -1,3 +1,3 @@
 #!/bin/bash
 
-$ES_HOME/utils/package-labs.sh $@
+$ES_HOME/utils/labs/package-labs.sh $@
