@@ -4,19 +4,12 @@
 ._DS_Store
 .DS_Store
 *.bin
-
-
-
-*.so
-./idea
-build
-
-
+# ignore html for now
+*.html
+not-using/
 
 ## python 
 .ipynb_checkpoints
 *.pyc
 
 
-# ignore html for now
-*.html
