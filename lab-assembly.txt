@@ -14,7 +14,6 @@ interop
 languagebasics
 notebooks
 numpy
-package-labs.sh
 pandas
 python-basics
 recs
