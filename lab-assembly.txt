@@ -1,8 +1,8 @@
-0-testing
+$ES_HOME/python-labs/0-testing
+
 Python-Data-Science.md
 Python-Language.md
 Python-Text.md
-README.md
 assets
 database
 deployment
