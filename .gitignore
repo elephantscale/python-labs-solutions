@@ -7,6 +7,7 @@
 # ignore html for now
 *.html
 not-using/
+data
 
 ## python 
 .ipynb_checkpoints
