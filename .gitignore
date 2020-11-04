@@ -8,6 +8,8 @@
 *.html
 not-using/
 data
+*.csv
+*.png
 
 ## python 
 .ipynb_checkpoints
