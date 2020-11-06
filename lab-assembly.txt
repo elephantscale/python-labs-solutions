@@ -1,8 +1,3 @@
-$ES_HOME/python-labs/0-testing
-
-Python-Data-Science.md
-Python-Language.md
-Python-Text.md
 assets
 database
 deployment
@@ -16,12 +11,17 @@ notebooks
 numpy
 pandas
 python-basics
+Python-Data-Science.md
+Python-Language.md
+Python-Text.md
+README.txt
 recs
 rxpy
 sklearn
 stats
 text-gensim
 text-nltk
+text-sklearn
 text-spacy
 text-vector
 visualization

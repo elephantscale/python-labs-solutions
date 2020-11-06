@@ -13,5 +13,5 @@ If you want the actual labs themselves, you can find them in [python-labs](https
 ## Lab Assembly
 The labs are assembled; look at 'lab-assembly.txt'
 To generate lab bundle, run
-        ./package-labs.sh
+        ./assemble-labs.sh
 
