@@ -8,7 +8,7 @@
 *.html
 not-using/
 data
-*.csv
+*.csv*
 *.png
 
 ## python 
