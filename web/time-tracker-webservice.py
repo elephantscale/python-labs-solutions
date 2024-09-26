@@ -1,4 +1,4 @@
-## time-tracker-webservice  solution
+## time-tracker-webservice solution
 import flask
 import pprint
 
@@ -22,26 +22,22 @@ def find_task(task_id):
     for task in tasks:
         if task['id'] == task_id:
             return task
-
+    return None
 
 @app.route('/')
 def index():
-    ret_value = {'status' : 'ok'}
+    ret_value = {'status': 'ok'}
     return flask.jsonify(ret_value)
 
 ## ----------- list all tasks --------
 @app.route('/tasks/', methods=['GET'])
 @app.route('/tasks/list', methods=['GET'])
 def get_tasks_list():
-    ## TODO
-    ## Hint : set tasks as 'tasks'
-    ret_value = {'status' : 'ok',\
-                 'tasks' : '???'}
+    ret_value = {'status': 'ok', 'tasks': tasks}
     if app.debug:
-        print("get_tasks_list:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+        print("get_tasks_list: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
     return flask.jsonify(ret_value)
 ## ----------- end: list all tasks --------
-
 
 ## ----------- get ONE task --------
 @app.route('/task/<int:task_id>', methods=['GET'])
@@ -49,17 +45,15 @@ def get_task(task_id):
     ret_value = {}
     task = find_task(task_id)
     if task:
-        ## TODO : set task to the found task
-        ## Hint :
         ret_value['status'] = 'ok'
-        ret_value['task'] = '???'
+        ret_value['task'] = task
     else:
         ret_value['status'] = 'error'
         ret_value['description'] = 'no task with id {}'.format(task_id)
-        #flask.abort(404)
+        # flask.abort(404)
 
     if app.debug:
-        print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+        print("get_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
     return flask.jsonify(ret_value)
 ## ----------- end: get ONE task --------
 
@@ -70,28 +64,23 @@ def create_task():
     if not flask.request.json or not 'name' in flask.request.json:
         ret_value['status'] = 'error'
         ret_value['description'] = "need 'name' for task"
-    else: # create a new task
-        ## TODO : create a task
-        ## Hint : name = flask.request.json['name']
-        ## Hint : time_spent = 0
-        task =  {
-            'id': tasks[-1]['id'] + 1,
-            'name': '???',
-            'time_spent' : '???'
+    else:  # create a new task
+        name = flask.request.json['name']
+        task = {
+            'id': tasks[-1]['id'] + 1 if tasks else 1,  # Increment last task id or start at 1
+            'name': name,
+            'time_spent': 0  # Default time spent is 0
         }
 
-        ## TODO : append the newly created task to the tasks list
-        ## Hint : append
-        # tasks.???(task)
+        tasks.append(task)
 
         ret_value['status'] = 'ok'
         ret_value['task'] = task
 
     if app.debug:
-        print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+        print("create_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
     return flask.jsonify(ret_value)
 ## ----------- end: create new task --------
-
 
 ## ----------- update a task --------
 @app.route('/task/update/<int:task_id>', methods=['PUT', 'POST'])
@@ -102,32 +91,31 @@ def update_task(task_id):
         ret_value['status'] = 'error'
         ret_value['description'] = 'no task with id {}'.format(task_id)
         if app.debug:
-            print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+            print("update_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
         return flask.jsonify(ret_value)
-        #flask.abort(404)
+        # flask.abort(404)
     if not flask.request.json:
         ret_value['status'] = 'error'
         ret_value['description'] = 'missing parameters'
         if app.debug:
-            print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+            print("update_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
         return flask.jsonify(ret_value)
 
     if not 'time' in flask.request.json:
         ret_value['status'] = 'error'
         ret_value['description'] = "missing 'time'"
         if app.debug:
-            print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+            print("update_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
         return flask.jsonify(ret_value)
 
     # now update the task
     time = flask.request.json['time']
-    ## TODO : add time to time_spent below
-    # task ['time_spent'] += int(???)
+    task['time_spent'] += int(time)
 
     ret_value['status'] = 'ok'
     ret_value['task'] = task
     if app.debug:
-        print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+        print("update_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
     return flask.jsonify(ret_value)
 ## ----------- end : update a task --------
 
@@ -136,20 +124,18 @@ def update_task(task_id):
 def delete_task(task_id):
     task = find_task(task_id)
     if not task:
-        ret_value = { 'status' : 'error',
-                      'description' : 'no task with id {}'.format(task_id)}
+        ret_value = {'status': 'error',
+                     'description': 'no task with id {}'.format(task_id)}
         if app.debug:
-           print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+            print("delete_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
         return flask.jsonify(ret_value)
-        #flask.abort(404)
+        # flask.abort(404)
 
-    ## TODO : remove the task from tasks list below
-    ## hint : remove
-    # tasks.???(task)
-    ret_value = { 'status' : 'ok',
-                  'description' : 'removed task id {}'.format(task_id)}
+    tasks.remove(task)
+    ret_value = {'status': 'ok',
+                 'description': 'removed task id {}'.format(task_id)}
     if app.debug:
-        print("get_task:Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
+        print("delete_task: Returning \n{}".format(pprint.pformat(ret_value, indent=4)))
     return flask.jsonify(ret_value)
 ## ----------- end : delete a task --------
 
